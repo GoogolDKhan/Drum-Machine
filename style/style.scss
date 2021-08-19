@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+$padWidth: 100px;
+$padHeight: 80px;
+
+body {
+  font-family: Russo One;
+}
+
+body {
+  user-select: none;
+  background-color: #FFC0CB;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container {
+  outline: 5px solid #FF1493;
+  position: relative;
+  width: 660px;
+  text-align: center;
+  background: linear-gradient(to bottom right,
+      rgb(10, 10, 10) 40%,
+      rgb(50, 50, 50),
+      rgb(80, 80, 80));
+
+  .pad-bank {
+    width: $padWidth * 3 + 32;
+    height: $padHeight * 3 + 32;
+    display: inline-block;
+    margin: 20px;
+
+    .drum-pad {
+      position: relative;
+      float: left;
+      width: $padWidth;
+      height: $padHeight;
+      margin-right: 10px;
+      border-radius: 5px;
+      padding-top: 35px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #FFFFFF;
+
+    .inner-logo {
+      display: inline-block;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+    }
+  }
+
+  .controls-container {
+    width: 240px;
+    height: $padHeight * 3 + 32;
+    display: inline-block;
+    margin: 40px 20px 0 10px;
+    vertical-align: top;
+    color: #FFFFFF;
+
+    .control {
+      width: 100px;
+      margin: auto;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .select {
+        @extend .outer-select;
+
+        .inner {
+          @extend .inner-select;
+        }
+      }
+    }
+
+    #display {
+      width: 200px;
+      background-color: #1ec8ce;
+      margin: 15px auto;
+      padding: 15px;
+      box-sizing: border-box;
+      color: #111;
+    }
+  }
+}
+
+.outer-select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner-select {
+  width: 23px;
+  height: 19px;
+  background: crimson;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
