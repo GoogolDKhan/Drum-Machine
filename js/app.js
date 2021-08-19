@@ -1,5 +1,3 @@
-const projectName = "drum-machine";
-
 const switchOne = [
     {
         keyCode: 81,
