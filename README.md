@@ -12,6 +12,10 @@
 - [SASS](https://sass-lang.com/documentation/syntax)
 - [ReactJS](https://reactjs.org/docs/hello-world.html)
 
+## Screenshot
+
+![DrumPad](https://i.ibb.co/dJKD569/drumpad.png)
+
 ## Author
 
 - [@Sarfaraz](https://www.github.com/GoogolDKhan)
