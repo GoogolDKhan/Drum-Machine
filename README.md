@@ -1,4 +1,4 @@
-# Drum Machine
+# Drum Machine [![CodeFactor](https://www.codefactor.io/repository/github/googoldkhan/drum-machine/badge/main)](https://www.codefactor.io/repository/github/googoldkhan/drum-machine/overview/main)
 
 ## Running
 
