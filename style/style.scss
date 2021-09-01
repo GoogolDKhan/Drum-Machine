@@ -8,7 +8,7 @@ body {
 
 body {
   user-select: none;
-  background-color: #FFC0CB;
+  background-color: #ffc0cb;
 }
 
 #root {
@@ -19,14 +19,16 @@ body {
 }
 
 .inner-container {
-  outline: 5px solid #FF1493;
+  outline: 5px solid #ff1493;
   position: relative;
   width: 660px;
   text-align: center;
-  background: linear-gradient(to bottom right,
-      rgb(10, 10, 10) 40%,
-      rgb(50, 50, 50),
-      rgb(80, 80, 80));
+  background: linear-gradient(
+    to bottom right,
+    rgb(10, 10, 10) 40%,
+    rgb(50, 50, 50),
+    rgb(80, 80, 80)
+  );
 
   .pad-bank {
     width: $padWidth * 3 + 32;
@@ -51,7 +53,7 @@ body {
     position: absolute;
     top: 5px;
     right: 10px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     .inner-logo {
       display: inline-block;
@@ -68,7 +70,7 @@ body {
     display: inline-block;
     margin: 40px 20px 0 10px;
     vertical-align: top;
-    color: #FFFFFF;
+    color: #ffffff;
 
     .control {
       width: 100px;
